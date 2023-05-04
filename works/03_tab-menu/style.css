@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: 50px auto;
+    font-size: 1.25rem;
+}
+
+.tab-menu{
+    width: 100%;
+}
+.tab-menu ul{
+    width: 100%;
+    display: flex;
+}
+
+.tab-content{
+    padding: 20px 10px;
+    background-color: #777;
+    color: white;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px ;
+    font-size: 1.0rem;
+}
+.tab-content ul{
+    width: 100%;
+}
+.tab-content li{
+    width: 100%;
+}
+.tab-content p{
+    width: 100%;
+    display: block;
+}
+
+
+.tab-menu a{
+    width: 100%;
+    display: block;
+    padding: 0px 10px;
+    background-color: #BBB;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tab-menu a.active{
+    background-color: #777;
+    color: white;
+    font-weight: bold;
+}
+
+.tab-content li{
+    display: none;
+}
+.tab-content li.active{
+    display: block;
+    width: 100%;
+}  

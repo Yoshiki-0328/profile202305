@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイマー</title>
+  </head>
+  <body>
+    <div class="now">
+      <h2>現在時刻</h2>
+      <p id="js-nowTime">00:00:00</p>
+    </div>
+
+    <div class="stopwatch">
+      <h2>ストップウォッチ</h2>
+      <p id="js-stopwatch">00:00:00</p>
+      <input id="js-stopwatchStart" type="button" value="開始" />
+      <input id="js-stopwatchStop" type="button" value="停止" disabled />
+      <input id="js-stopwatchResset" type="button" value="リセット" disabled />
+    </div>
+
+    <div class="timer">
+      <h2>タイマー</h2>
+      <div class="timer-input">
+        <input type="text" value="0" />秒
+      </div>
+      <p id="js-timerTime">00:00:00</p>
+      <input id="js-timerStart" type="button" value="開始" />
+      <input id="js-timerStop" type="button" value="停止" disabled />
+      <input id="js-timerResset" type="button" value="リセット" disabled />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

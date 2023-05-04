@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓</title>
+    <link rel="stylesheet" href="../../css/destyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container w-50">
+        <div class="result fs-1 mb-2 bg-light" >
+            <p class="text-end" id="js-result">0</p>
+        </div>
+        <div class="button">
+            <div class="row">
+                <div class="fs-4 col-12 btn btn-primary" id="js-ac" onclick="calc(this)">AC</div>
+            </div>
+            <div class="row">
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">1</div>
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">2</div>
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">3</div>
+                <div class="fs-4 col-3 btn btn-primary mt-1" onclick="calc(this)">+</div>
+            </div>
+            <div class="row">
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">4</div>
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">5</div>
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">6</div>
+                <div class="fs-4 col-3 btn btn-primary mt-1" onclick="calc(this)">-</div>
+            </div>
+            <div class="row">
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">7</div>
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">8</div>
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">9</div>
+                <div class="fs-4 col-3 btn btn-primary mt-1" onclick="calc(this)">*</div>
+            </div>
+            <div class="row">
+                <div class="fs-4 col-3 btn btn-outline-primary mt-1" onclick="calc(this)">0</div>
+                <div class="fs-4 col-6 btn btn-secondary mt-1 mt-1" onclick="calc(this)">=</div>
+                <div class="fs-4 col-3 btn btn-primary mt-1" onclick="calc(this)">÷</div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

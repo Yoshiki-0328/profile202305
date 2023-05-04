@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アコーディオンメニュー</title>
+    <style>
+    /* 共通設定 */
+    body{
+      font-size: 100%;
+    }
+      ul {
+        padding-left: 0;
+        margin-top: 50px;
+      }
+      li {
+        list-style: none;
+      }
+      main {
+        width: 70%;
+        margin: 80px auto;
+      }
+
+      .job li:last-child {
+        border-bottom: 1px solid black;
+      }
+
+      .job li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding-left: 50px;
+        transition: all 0.5s;
+        font-size: 1.25rem;
+        font-weight: bold;
+        border-top: 1px solid black;
+        position: relative;
+        line-height: 5;
+      }
+
+      .job li a:hover,
+      .job li a.open{
+        background-color: rgb(244, 175, 48);
+      }
+
+      .job li a::before,
+      .job li a::after {
+        content: "";
+        width: 20px;
+        height: 1.5px;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transition: all .5s;
+      }
+
+      .job li a::after {
+        transform: rotate(-90deg);
+      }
+
+      /* 開いていないときは、透過、隠す */
+      .job li dl {
+        display: flex;
+        flex-wrap: wrap;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0 50px;
+        margin: 0;
+        transition: all .5s;
+      }
+
+      .job li dt {
+        width: 30%;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .job li dd {
+        width: 70%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+
+      /* 開いた状態の設定 */
+      .job li a.open::before{
+        opacity: 0;
+      }
+
+      .job li a.open::after {
+        transform: rotate(0deg);
+      }
+
+      .job li a.open + dl {
+        visibility: visible;
+        padding: 20px 50px;
+        opacity: 1;
+        height: auto;
+      }
+      @media (max-width:560px) {
+        main {
+        width: 90%;
+        }
+        .job li dl {
+          padding: 0 20px;
+        }
+        .job li a.open + dl {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>募集職種</h1>
+      </div>
+      <ul id="js-job" class="job">
+        <li>
+          <a href="#">１．Webディレクター</a>
+          <dl>
+            <dt>仕事内容</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>応募資格</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>必須スキル</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>給与</dt>
+            <dd>XXX万～XXX万 (スキル・経験・実績により優遇)</dd>
+            <dt>休日・休暇</dt>
+            <dd>
+              土日祝祭日、有給休暇、夏季休暇、年末年始休暇、産前産後休暇、育児休暇
+            </dd>
+            <dt>雇用形態</dt>
+            <dd>正社員（試用期間3ヶ月）<br />業務委託</dd>
+            <dt>勤務時間</dt>
+            <dd>フレックスタイム</dd>
+            <dt>勤務地</dt>
+            <dd>東京</dd>
+          </dl>
+        </li>
+        <li>
+          <a href="#">２．Webデザイナー</a>
+          <dl>
+            <dt>仕事内容</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>応募資格</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>必須スキル</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>給与</dt>
+            <dd>XXX万～XXX万 (スキル・経験・実績により優遇)</dd>
+            <dt>休日・休暇</dt>
+            <dd>
+              土日祝祭日、有給休暇、夏季休暇、年末年始休暇、産前産後休暇、育児休暇
+            </dd>
+            <dt>雇用形態</dt>
+            <dd>正社員（試用期間3ヶ月）<br />業務委託</dd>
+            <dt>勤務時間</dt>
+            <dd>フレックスタイム</dd>
+            <dt>勤務地</dt>
+            <dd>東京</dd>
+          </dl>
+        </li>
+        <li>
+          <a href="#">３．プログラマー</a>
+          <dl>
+            <dt>仕事内容</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>応募資格</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>必須スキル</dt>
+            <dd>テキストテキストテキストテキスト</dd>
+            <dt>給与</dt>
+            <dd>XXX万～XXX万 (スキル・経験・実績により優遇)</dd>
+            <dt>休日・休暇</dt>
+            <dd>
+              土日祝祭日、有給休暇、夏季休暇、年末年始休暇、産前産後休暇、育児休暇
+            </dd>
+            <dt>雇用形態</dt>
+            <dd>正社員（試用期間3ヶ月）<br />業務委託</dd>
+            <dt>勤務時間</dt>
+            <dd>フレックスタイム</dd>
+            <dt>勤務地</dt>
+            <dd>東京</dd>
+          </dl>
+        </li>
+      </ul>
+    </main>
+
+    <script>
+      const $job = document.querySelectorAll("#js-job li a");
+
+      $job.forEach((job) => {
+        job.addEventListener("click", (e) => {
+            e.preventDefault();
+            job.classList.toggle('open');
+        });
+      });
+
+    </script>
+  </body>
+</html>
