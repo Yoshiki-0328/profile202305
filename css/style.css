@@ -2,7 +2,24 @@
 body{
     color: #333;
 }
-
+/* ふわっと動く動き */
+.fadeUpTrigger {
+    opacity: 0;
+  }
+  .fadeUp {
+    animation: fadeUpAnime forwards 2s;
+    opacity: 0;
+  }
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 /*
 header 
  */
@@ -204,40 +221,68 @@ service
     padding: 20px;
 }
 }
+
+/* modal */
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+
 /* 
 Portfolio
 */
 .por-content{
     display: flex;
     flex-wrap: wrap;
+    padding: 0 100px;
 }
 .por-content li {
-    width: 33%;
+    width: 50%;
     text-align: center;
-    padding: 15px;
-    margin-bottom:20px;
-    position: relative;
+    padding: 20px;
+    margin-bottom:50px;
 }
 .por-content li img{
     width: 100%;
-    outline: 1px solid #999;
+    max-width: 350px;
+    min-height: 165px;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px 1px #333;
+    transition: all .5s;
+}
+.por-content li img:hover{
+    transform: scale(1.02);
 }
 .por-content p{
-    background-color: rgb(50, 50, 50, .65);
-    line-height: 2;
-    width: calc(100% - 30px);
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
+    margin-top: 20px;;
+}
+
+@media screen and (max-width:870px) {
+    .por-content{
+        padding: 0 10px;
+    }
+    .por-content li {
+    width: 100%;
+}
 }
 @media screen and (max-width:640px) {
-    .por-content li {
-    width: 50%;
-}
-.por-content p{
-    font-size: .7rem;
-}
+    .por-content p{
+        font-size: .8rem;
+    }
 }
 
 /* 
