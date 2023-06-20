@@ -68,7 +68,7 @@
               現在はクラウドサービス（SaaS）の拡販や導入、運用支援を行っています。
               フロントサイド言語が得意で、主にHTMLやCSS、Javascriptの経験があります。
             </p>
-            <a href="./about.html">More</a>
+            <a href="./about.html">View more <span><img src="./img/link1.png" alt=""></span></a>
           </div>
         </div>
       </section>
@@ -117,92 +117,164 @@
         </ul>
       </section>
 
-      <!--1. テキストを含む一般的なモーダル-->
-      <ul class="info-list">
-        <li>
-          <a href="#info-1" class="info"
-            ><!--リンク先は表示させたいエリアのid名を指定-->
-            <dl>
-              <dt>2021.5.12</dt>
-              <dd>お知らせのタイトル</dd>
-            </dl>
-          </a>
-        </li>
-      </ul>
-      <section id="info-1" class="hide-area">
-        <!--表示エリアのHTML。id名にリンク先と同じ名前を指定。非表示にするためhide-areaというクラス名も指定。-->
-        <h2>お知らせ</h2>
-        <p>おしらせの内容が入ります。</p>
-      </section>
-
-
       <!-- portfolio -->
       <section>
         <div class="sec-title">
           <h2>Portfolio</h2>
         </div>
-        <ul class="por-content">
+        <ul class="por-content info-list">
           <li class="fadeUpTrigger">
-            <a href="./works/12_corporate-site/index.html">
+            <a href="#info-1" class="info">
               <img src="./img/corporatesite1.PNG" alt="" />
-              <p>企業サイト（架空）</p>
+              <p>企業サイト</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/13_cafe-site/index.html">
+            <a href="#info-2" class="info">
               <img src="./img/cafesite1.PNG" alt="" />
-              <p>カフェサイト（架空）</p>
+              <p>カフェサイト</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="#">
+            <a href="#info-3" class="info">
               <img src="./img/profilesite1.PNG" alt="" />
               <p>ポートフォリオサイト</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="https://profile-site-a91ed.web.app/profile">
+            <a href="#info-4" class="info">
               <img src="./img/profilevue1.PNG" alt="" />
               <p>プロフィールサイト（ＳＰＡ）</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/04_isara/index.html">
+            <a href="#info-5" class="info">
               <img src="./img/isara1.PNG" alt="" />
               <p>isaraサイト</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/07_block breaker-breaker/index.html">
+            <a href="./works/07_block breaker-breaker/index.html" >
               <img src="./img/blockgame1.PNG" alt="" />
               <p>ブロック崩しゲーム</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/11_todo/index.html">
+            <a href="./works/11_todo/index.html" >
               <img src="./img/todo1.PNG" alt="" />
               <p>Todoリスト</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/10_keyboard/keyboard_game/index.html">
+            <a href="./works/10_keyboard/keyboard_game/index.html" >
               <img src="./img/typing1.PNG" alt="" />
               <p>タイピングゲーム</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/05_calculator/index.html">
+            <a href="./works/05_calculator/index.html" >
               <img src="./img/caluc1.PNG" alt="" />
               <p>電卓アプリ</p>
             </a>
           </li>
           <li class="fadeUpTrigger">
-            <a href="./works/06_qr-create-app/index.html">
+            <a href="./works/06_qr-create-app/index.html" >
               <img src="./img/qr1.PNG" alt="" />
               <p>QRコード生成アプリ</p>
             </a>
           </li>
         </ul>
+      </section>
+
+      <!-- modalarea -->
+      <section id="info-1" class="hide-area">
+        <div class="descripiton">
+          <div class="description-title">
+            <h2>コーポレートサイト（架空）</h2>
+          </div>
+          <p>
+            架空IT企業のHPを作成しています。1ページに企業情報を集約し、
+            スライドショー、アコーディオンメニュー、スムーススクロール、ハンバーガーメニューを実装し、
+            レスポンシブ対応済みで、スマホデザインも実装しています。
+          </p>
+          <h2>使用言語など</h2>
+          <p>HTML,CSS,javascript(jQuery)</p>
+          <div class="viewmore">
+            <a href="./works/12_corporate-site/index.html">View more<span><img src="./img/link1.png" alt=""></span></a>
+          </div>
+        </div>
+        <img src="./img/corporatesite1.PNG" alt="" />
+      </section>
+      <section id="info-2" class="hide-area">
+        <div class="descripiton">
+          <div class="description-title">
+            <h2>カフェサイト（架空）</h2>
+          </div>
+          <p>
+            架空カフェ店舗のHPを作成しています。トップ、コンセプト、メニュー、アクセスの
+            4ページを作成しています。ローディング画面や
+            スライドショー、アコーディオンメニュー、スムーススクロール、ハンバーガーメニューを実装し、
+            レスポンシブ対応済みで、スマホデザインも実装しています。
+          </p>
+          <h2>使用言語など</h2>
+          <p>HTML,CSS,javascript(jQuery)</p>
+          <div class="viewmore">
+            <a href="./works/13_cafe-site/index.html">View more<span><img src="./img/link1.png" alt=""></span></a>
+          </div>
+        </div>
+        <img src="./img/cafesite1.PNG" alt="" />
+      </section>
+      <section id="info-3" class="hide-area">
+        <div class="descripiton">
+          <div class="description-title">
+            <h2>ポートフォリオサイト</h2>
+          </div>
+          <p>
+            本ホームページになります。トップ、アバウト、ポートフォリオの3ページ作成しています。
+            シンプルなページ構成で、フェードアップやトップページリンクを作成しいます。
+            レスポンシブ対応済みで、スマホデザインも実装しています。
+          </p>
+          <h2>使用言語など</h2>
+          <p>HTML,CSS,javascript(jQuery)</p>
+          <div class="viewmore">
+            <a href="#">View more<span><img src="./img/link1.png" alt=""></span></a>
+          </div>
+        </div>
+        <img src="./img/profilesite1.PNG" alt="" />
+      </section>
+      <section id="info-4" class="hide-area">
+        <div class="descripiton">
+          <div class="description-title">
+            <h2>プロフィールサイト（ＳＰＡ）</h2>
+          </div>
+          <p>
+            Vue.jsで作成したシングルページアプリケーションになります。
+            コンポネント間のデータ連携やルーティング、バックエンドとの通信も実装しています。
+          </p>
+          <h2>使用言語など</h2>
+          <p>HTML,CSS,javascript,Vue.js,FIREBASE</p>
+          <div class="viewmore">
+            <a href="#">View more<span><img src="./img/link1.png" alt=""></span></a>
+          </div>
+        </div>
+        <img src="./img/profilesite1.PNG" alt="" />
+      </section>
+      <section id="info-5" class="hide-area">
+        <div class="descripiton">
+          <div class="description-title">
+            <h2>isaraサイト（模写）</h2>
+          </div>
+          <p>
+            isaraサイトの模写になります。前画面がサンプル通りになるようにコーディングしています。
+            レスポンシブ対応済みで、スマホデザインも実装しています。
+          </p>
+          <h2>使用言語など</h2>
+          <p>HTML,CSS,javascript</p>
+          <div class="viewmore">
+            <a href="#">View more<span><img src="./img/link1.png" alt=""></span></a>
+          </div>
+        </div>
+        <img src="./img/profilesite1.PNG" alt="" />
       </section>
     </main>
 
